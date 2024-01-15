@@ -10,12 +10,12 @@ Then check with `nvidia-smi` what version of cuda you are running. I have cuda 1
 
     mamba install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 
-Test whether it sees your gpu:
+Test whether it sees your gpu, go into python and:
 
     import torch
     torch.cuda.is_available()
 
-Install additional libraries:
+Install additional libraries (pycocotools not currently being used but might be):
 
     mamba install -c conda-forge opencv matplotlib scikit-image pycocotools jupyterlab
 
@@ -24,6 +24,6 @@ install torchinfo (gives summary of models -- not really essential but can be us
     pip install torchinfo
 
 ## Run notebook
-All the important things should be in `volpy_training_initial.ipynb`, including which source materials it are adapted from, thoughts for improving etc. 
+All the important things should be in `volpy_training_initial.ipynb`, including which source materials it is adapted from, what needs to be improved, what might be improved, etc. 
 
 
